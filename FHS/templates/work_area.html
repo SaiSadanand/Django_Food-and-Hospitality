@@ -1,0 +1,174 @@
+<div class="destination item">
+    <div class="destination_image">
+        <img src="{% static 'images/vegSide.jpg' %}" alt="">
+    </div>
+    <div class="destination_content">
+        <div class="destination_title"><a href="veg">Veg-Food</a></div>
+        <div class="destination_subtitle"><p>Experience the Veggie World</p></div>
+        <div class="destination_price">From $2</div>
+        <div class="destination_list">
+            <ul>
+                <li>Starters</li>
+                <li>MaiCourse</li>
+                <li>rotis</li>
+                <li>curries</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="destination item">
+    <div class="destination_image">
+        <img src="{% static 'images/nonVegSide.jpg' %}" alt="">
+    </div>
+    <div class="destination_content">
+        <div class="destination_title"><a href="nonveg">Veg-Food</a></div>
+        <div class="destination_subtitle"><p>Submerge into tenderness and floavours </p></div>
+        <div class="destination_price">From $4</div>
+        <div class="destination_list">
+            <ul>
+                <li>Starters</li>
+                <li>MaiCourse</li>
+                <li>rotis</li>
+                <li>curries</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="destination item">
+    <div class="destination_image">
+        <img src="{% static 'images/des.jpg' %}" alt="">
+    </div>
+    <div class="destination_content">
+        <div class="destination_title"><a href="desserts">Desserts</a></div>
+        <div class="destination_subtitle"><p>add sugar to your life</p></div>
+        <div class="destination_price">From $1</div>
+        <div class="destination_list">
+            <ul>
+                IceCreams,Beverages,Cakes,MilkShakes,Sweets,SoftDrinks
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-int</title>
+</head>
+<body>
+    <center>
+        <form action='login' method='post'>
+            {% csrf_token %}
+            <strong>UserName:<input type='text' name='username' placeholder="enter your username"></strong><br>
+            <strong>Password:<input type='password' name='password' placeholder="enter your password"></strong><br>
+            <input type='submit' value='Log-In'>
+        </form>
+    
+    <div>
+        {% for message in messages %}
+            <h3>{{message}}</h3>
+        {% endfor %}
+    </div>
+</center> 
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action='register' method='post'>
+        {% csrf_token %}
+        <center>
+            <bold>FirstName:<input type='text' name='first_name' placeholder="enter your FirstName"></bold><br>
+            <bold>LastName:<input type='text' name='last_name' placeholder="enter your LastName"></bold><br>
+            <bold>UserName:<input type='text' name='username' placeholder="enter UserName"></bold><br>
+            <bold>E-mail:<input type='email' name='email' placeholder="enter your email"></bold><br>
+            <bold>Password:<input type='password' name='password1' placeholder="enter Password"></bold><br>
+            <bold>Confirm-Password:<input type='password' name='password2' placeholder="enter Password"></bold><br>
+            <bold><input type='submit' value='register'></bold>
+        </center>
+    </form>
+    <div>
+        {% for message in messages %}
+            <h3>{{message}}</h3>
+        {% endfor %}
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+{% load static %}
+<html>
+    <head>
+        <title>
+            UVS-Admin Login
+        </title>
+        <style>
+            .a{
+               
+                /*background-color: rgb(214, 184, 144);*/
+               
+                margin-top: 10em;
+                margin-left: 28em;
+                margin-right: 25em;
+                margin-bottom: 15em;
+               /* border: solid rgb(114, 107, 107) 5px;
+                border-style: inset;*/
+                padding-top: 5em;
+                padding-bottom: 5em;
+                font-size: 20px;
+            }
+           body{
+            height: 100%; 
+
+                
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+           }
+           .h{
+               
+               padding:5px;
+               font-family:sans-serif;
+               /*border:solid rgb(114, 107, 107) 5px;
+               border-style: inset;*/
+           }
+            
+        </style>
+
+    </head>
+    <body  background="{% static 'FHS\assets\images\destination_1.jpg' %}">
+        <div class="s">       
+            <div class="h"><center><h2><STRONG>UVS-</STRONG>University Voting System</h2></center></div>
+            <center>
+
+       <form class='a' action='admin_home.html'>
+           <label class='b'>EMP-Id</label><br>
+           <input type='text' maxlength='5'class='b' required><br><br>
+           <label class='b'>Password</label><br>
+           <input type='password' maxlength="10" class='b' required><br><br>
+           <input type='submit'  value='log-in' class='b'><br><br>
+           <label><a href="adminreg.html">new ADMIN?click here to register</a></label> <br><br><lable><a href="C:\Users\SAI SADANAND\Desktop\HTML PAGES\X_M_L\project\STUDENT\sample_proj.html">Student LogIn</a></lable>
+       </form>
+    </center>
+</div>
+
+    </body>
+</html>
